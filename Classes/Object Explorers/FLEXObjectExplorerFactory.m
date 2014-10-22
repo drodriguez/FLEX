@@ -12,6 +12,7 @@
 #import "FLEXSetExplorerViewController.h"
 #import "FLEXDictionaryExplorerViewController.h"
 #import "FLEXDefaultsExplorerViewController.h"
+#import "FLEXMapTableExplorerViewController.h"
 #import "FLEXViewControllerExplorerViewController.h"
 #import "FLEXViewExplorerViewController.h"
 #import "FLEXImageExplorerViewController.h"
@@ -33,6 +34,7 @@
         explorerSubclassesForObjectTypeStrings = @{NSStringFromClass([NSArray class])          : [FLEXArrayExplorerViewController class],
                                                    NSStringFromClass([NSSet class])            : [FLEXSetExplorerViewController class],
                                                    NSStringFromClass([NSDictionary class])     : [FLEXDictionaryExplorerViewController class],
+                                                   NSStringFromClass([NSMapTable class])       : [FLEXMapTableExplorerViewController class],
                                                    NSStringFromClass([NSUserDefaults class])   : [FLEXDefaultsExplorerViewController class],
                                                    NSStringFromClass([UIViewController class]) : [FLEXViewControllerExplorerViewController class],
                                                    NSStringFromClass([UIView class])           : [FLEXViewExplorerViewController class],
